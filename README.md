@@ -17,10 +17,11 @@ A switch case is used to get the choice of the user.
 Once the choice is accepted, the corresponding function is called.
 This is mentioned in the body of the switch case.
 For example,
-if the choice is A:then the function stock-entry is called.
-if the choice is B:then the function stock-addn is called.
-if the choice is C:then the function stock-remaining is called.
-if the choice is D:then the function profit-calc is called.
+if the choice is A: then the function stock-entry is called.
+if the choice is B: then the function stock-addn is called.
+if the choice is C: then the function stock-remaining is called.
+if the choice is D: then the function profit-calc is called.
+else default block is executed.
 
 The corresponding code for performing the functionalities are described in the function definition.
 
