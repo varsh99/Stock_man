@@ -2,6 +2,7 @@
 To manage stocks for a supermarket
 
 This project deals with creating a code-based solution for stock management in supermarkets. 
+
 This coding helps in:
 *Adding the details of the new stock
 *Viewing the entered stock details
