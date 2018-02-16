@@ -11,3 +11,5 @@ This coding helps in:
 *Calculating the profit and loss of a day.
 
 The coding involves basic structures and for loop concepts which are used to achieve the process of stock management.
+Structures to get date and stock details are created.
+
