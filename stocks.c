@@ -38,8 +38,10 @@ struct stock_details stocks[100];
 
 char x;
 
-int i,add=0,n,rem=0,price_tot=0,sum=0;
+int i,add=0,n,rem=0,sum=0;
 
+float price_tot=0.0;
+   
 void stock_entry()
 
 {
@@ -98,6 +100,7 @@ scanf("%d",&n);
 for(i=1;i<=n;i++)
 
 {
+scanf("%d %f",&stock[i].quantity,&stock[i].price);
 
 add=add+stocks[i].quantity;
 
@@ -105,7 +108,7 @@ price_tot=price_tot+stocks[i].price;
 
 }
 
-printf("Stocks added=%d \n Stocks price=%d",add,price_tot);
+printf("Stocks added=%d \n Stocks price=%.2f",add,price_tot);
 
 }
 
