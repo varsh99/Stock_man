@@ -20,7 +20,7 @@ struct stock_details
 
 char stock_name[50];
 
-char code;
+int code;
 
 float price;
 
@@ -44,19 +44,19 @@ void stock_entry()
 
 {
 
-printf("Enter the number of stocks");
+printf("Enter the number of stocks\n");
 
 scanf("%d",&n);
 
-printf("Enter the stock name, product code, price, expiry date, quantity");
+printf("Enter the stock name, product code, price, expiry date, quantity\n");
 
-for(i=0;i<=n;i++)
+for(i=1;i<=n;i++)
 
 {
 
 scanf("%s",stocks[i].stock_name);
 
-scanf("%d",stocks[i].code);
+scanf("%d",&stocks[i].code);
 
 scanf("%f",&stocks[i].price);
 
@@ -66,9 +66,9 @@ scanf("%d",&stocks[i].quantity);
 }
 
 
-printf("The entered stock details is");
+printf("The entered stock details is\n");
 
-for(i=0;i<=n;i++)
+for(i=1;i<=n;i++)
 
 {
 printf("%s",stocks[i].stock_name);
@@ -91,11 +91,11 @@ void stock_addn()
 
 {
 
-printf("Enter for how many number of stocks the quantity and price are to be summed");
+printf("Enter for how many number of stocks the quantity and price are to be summed\n");
 
 scanf("%d",&n);
 
-for(i=0;i<=n;i++)
+for(i=1;i<=n;i++)
 
 {
 
@@ -119,7 +119,7 @@ printf("Enter the number of products sold today:\n");
 
 scanf("%d",&n);
 
-for(i=0;i<=n;i++)
+for(i=1;i<=n;i++)
 
 {
 
@@ -144,30 +144,30 @@ void balance_calc()
 
 int closing_bal[100];
 
-printf("Enter for how many days balance is to be calculated");
+printf("Enter for how many days balance is to be calculated\n");
 
 scanf("%d",&n);
 
-for(i=0;i<=n;i++)
+for(i=1;i<=n;i++)
 
 {
    
  
 closing_bal[i]=(stocks[i].quantity)*(stocks[i].price);
 
-printf("Closing balance = %d",closing_bal[i]);
+printf("Closing balance = %d\n",closing_bal[i]);
 
 }
 
 int opening_bal[100];
 
-for(i=0;i<=n;i++)
+for(i=1;i<=n;i++)
 
 {
 
 opening_bal[i]=closing_bal[i];
 
-printf("Opening balance = %d",opening_bal[i]);
+printf("Opening balance = %d\n",opening_bal[i]);
 
 }
 
